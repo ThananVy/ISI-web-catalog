@@ -48,3 +48,12 @@ function submitForm() {
       console.error("Error sending email:", error);
     });
 }
+
+// language
+
+document.getElementById('languageSelect').addEventListener('change', function () {
+  var selectedValue = this.value;
+  if (selectedValue === 'kh') {
+      window.location.href = 'page/khmer.html';
+  } 
+});
