@@ -1,0 +1,359 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #193c96;
+  /* color: rgba(0, 123, 255, 0.5); */
+  /* color: rgba(255,255,255,.31) 1px solid; */
+  color: #fff
+}
+
+
+.logo {
+  flex: 0 0 auto; 
+  padding-left: 5%;
+}
+
+.logo img {
+  display: block;
+}
+.lang {
+  padding-right: 5%;
+}
+
+.lang select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #193c96; /* Blue border color */
+  border-radius: 5px;
+  background-color: #193c96; /* Blue background color */
+  color: white; /* White text color */
+  cursor: pointer;
+  font-family: Arial, sans-serif; 
+}
+
+/* Style for the dropdown options */
+.lang select option {
+  background-color: #2b495e; /* Blue background color */
+  color: white; /* White text color */
+}
+
+/* --------------------------------------------------- */
+
+h2 {
+  color: #193c96;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+h3 {
+  color: #193c96;
+  text-align: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 80px;
+}
+
+/* Form Container */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Form Input Fields */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Submit Button */
+button {
+  background-color: #193c96;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Flex box */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 15%;
+}
+
+.image-container a {
+  width: 48%;
+  margin-bottom: 80px;
+  display: block; /* Ensure the anchor takes up the entire width of the container */
+  overflow: hidden; 
+  transition: filter 0.8s ease, transform 0.8s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.image-container a:hover {
+  filter: brightness(150%);
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px) {
+  .image-container a {
+      width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .image-container a {
+      width: 100%;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+/* Footer */
+.flex-container1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:0 10%;
+  background-color: #193c96;
+}
+
+.image-text-container1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-item1 {
+  flex: 1; /* Each item takes equal width */
+  min-width: 200px; /* Set a minimum width for better responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  background-color: #193c96;
+  color: white;
+}
+
+.flex-item1 h2 {
+  color: white;
+  text-align: center;
+}
+
+.flex-item1 h3 {
+  color: white;
+  text-align: center;
+}
+
+.flex-item1 li {
+  padding: 10px 0 10px 40%;
+}
+@media (max-width:767px) {
+  .flex-container1 li {
+    padding-left: 0;
+  }
+}
+.image-text-container1 {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-text-container1 img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.image-text-container1 p {
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul a li {
+  list-style: none;
+}
+
+.flex-item2 {
+  flex: 1; /* Each item takes equal width */
+  min-width: 200px; /* Set a minimum width for better responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  background-color: #193c96;
+  color: white;
+}
+
+img .social {
+  padding-top: 30px;
+}
+
+.image-text-container2 .social:hover {
+  transform: scale(1.1); /* Apply a zoom-out effect on hover */
+}
+
+.image-text-container2 {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 65%;
+}
+
+.image-text-container2 img {
+  margin: 0 10px;
+}
+
+
+@media (max-width: 767px) {
+  .flex-item1 {
+      flex-basis: 100%; /* Each item takes full width on smaller screens */
+  }
+
+  .image-text-container2 {
+    padding-top: 10px;
+  }
+
+  .image-text-container2 img {
+    margin-bottom: 20px;
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #011e7b; /* Dark blue color */
+  padding: 20px;
+  z-index: 2;
+  color: white; /* Text color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for a subtle effect */
+  max-width: 90vw; /* Adjust max-width for responsiveness */
+  width: 90%;
+}
+
+/* Pop Up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 2px solid #4d87b6;
+  z-index: 9999;
+}
+
+.popup {
+max-width: 500px;
+margin: 0 auto;
+background-color: #ffffff;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+text-align: center;
+font-size: 20px;
+margin-bottom: 20px;
+}
+.popup h3 {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.popup form {
+display: flex;
+flex-direction: column;
+}
+
+.popup label {
+font-size: 15px;
+margin-bottom: 2px;
+}
+
+.popup input[type="text"],
+.popup textarea {
+font-size: 16px;
+border-radius: 5px;
+border: none;
+margin-bottom: 15px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+.popup h2 {
+  color: #011e7b;
+}
+
+.popup h3 {
+  color: black;
+}
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold; /* Add thickness to the close button */
+  }
+
+.close-btn:hover {
+  background-color: rgb(255, 0, 0); /* Add red background on hover */
+  color: white; /* Change text color to white on hover for better visibility */
+}

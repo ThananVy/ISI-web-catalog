@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #011e7b;
+  color: #011e7b;
+}
+
+
+.logo {
+  flex: 0 0 auto; 
+  padding-left: 5%;
+}
+
+.logo img {
+  display: block;
+}
+.lang {
+  padding-right: 5%;
+}
+
+.lang select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #011e7b; /* Blue border color */
+  border-radius: 5px;
+  background-color: #011e7b; /* Blue background color */
+  color: white; /* White text color */
+  cursor: pointer;
+  font-family: Arial, sans-serif; 
+}
+
+/* Style for the dropdown options */
+.lang select option {
+  background-color: #2b495e; /* Blue background color */
+  color: white; /* White text color */
+}
+/* --------------------------------------------------- */
+
+/* Content */
+h2 {
+  color: #011e7b;
+  text-align: center;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Flex box */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10%;
+
+}
+
+.box {
+  width: calc(33.33% - 20px); /* 33.33% width with margin on both sides */
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box:first-child,
+.box:nth-child(4) {
+  margin-left: 0; /* Adjusting margin for the 1st and 4th boxes */
+}
+
+.box:nth-child(3),
+.box:last-child {
+  margin-right: 0; /* Adjusting margin for the 3rd and 6th boxes */
+}
+
+@media (max-width: 767px) {
+  .box {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+/* --------------------------------------------------------------- */
+
+/* Footer */
+.flex-container1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding:0 10%;
+  background-color: #193c96;
+}
+
+.image-text-container1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-item1 {
+  flex: 1; /* Each item takes equal width */
+  min-width: 200px; /* Set a minimum width for better responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  background-color: #193c96;
+  color: white;
+}
+
+.flex-item1 h2 {
+  color: white;
+  text-align: center;
+}
+
+.flex-item1 h3 {
+  color: white;
+  text-align: center;
+}
+
+.flex-item1 li {
+  padding: 10px 0 10px 40%;
+}
+@media (max-width:767px) {
+  .flex-container1 li {
+    padding-left: 0;
+  }
+}
+.image-text-container1 {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.image-text-container1 img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.image-text-container1 p {
+  margin: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+ul a li {
+  list-style: none;
+}
+
+.flex-item2 {
+  flex: 1; /* Each item takes equal width */
+  min-width: 200px; /* Set a minimum width for better responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: left;
+  background-color: #193c96;
+  color: white;
+}
+
+img .social {
+  padding-top: 30px;
+}
+
+.image-text-container2 .social:hover {
+  transform: scale(1.1); /* Apply a zoom-out effect on hover */
+}
+
+.image-text-container2 {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-left: 65%;
+}
+
+.image-text-container2 img {
+  margin: 0 10px;
+}
+
+
+@media (max-width: 767px) {
+  .flex-item1 {
+      flex-basis: 100%; /* Each item takes full width on smaller screens */
+  }
+
+  .image-text-container2 {
+    padding-top: 10px;
+  }
+
+  .image-text-container2 img {
+    margin-bottom: 20px;
+  }
+}
