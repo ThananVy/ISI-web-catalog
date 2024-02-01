@@ -52,8 +52,16 @@ function submitForm() {
 // language
 
 document.getElementById('languageSelect').addEventListener('change', function () {
-  var selectedValue = this.value;
-  if (selectedValue === 'kh') {
-      window.location.href = 'page/khmer.html';
-  } 
+    var selectedValue = this.value;
+    console.log('Language changed to:', selectedValue);
+
+    if (selectedValue === 'kh') {
+        console.log('Redirecting to khmer.html');
+        window.location.href = '/page/khmer.html';
+    } else if (selectedValue === 'en') {
+        console.log('Redirecting to index.html');
+        window.location.href = '/index.html';
+    } else {
+        console.log('No redirection. Unknown language selected.');
+    }
 });

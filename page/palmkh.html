@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/palm.css">
     <title>ISI STEEL PRODUCT CATEGORIES</title>
     <link rel="icon" href="/img/bluesteel.png">
     <script type="text/javascript"
@@ -29,10 +29,10 @@
 
       // Check the selected language and redirect to the corresponding page
       if (selectedValue === "kh") {
-        window.location.href = "/page/khmer.html";
+        window.location.href = "/page/palmkh.html";
       }
       else  {
-        window.location.href = "/index.html";
+        window.location.href = "/page/palm.html";
       }
     }
   </script>
@@ -70,65 +70,49 @@
             លើសពីសេចក្តីត្រូវការ និងការរំពឹងទុកក្នុងឧស្សាហកម្ម។
         </p>
     </span>
-    <!-- Edit Here:👆 -->
 
-    <!-- Change the image Here:👇 -->
-    <div class="image-container">
-        <a href="/page/palm.html">
-            <img src="/img/homepalm.png" alt="Image 1" title="This is ISIPALM Product.">
-        </a>
-        <a href="/page/pipe.html">
-            <img src="/img/homepipe.png" alt="Image 2" title="This is ISIPIPE Product.">
-        </a>
-        <a href="/page/debar.html">
-            <img src="/img/homedebar.png" alt="Image 3" title="This is ISIDEBAR Product.">
-        </a>
-        <a href="/page/truss.html">
-            <img src="/img/hometruss.png" alt="Image 4" title="This is ISITRUSS Product.">
-        </a>
-        <a href="/page/cz.html">
-            <img src="/img/homecz.png" alt="Image 5" title="This is ISIC&Z Product.">
-        </a>
-        <a href="/page/cz.html">
-            <img src="/img/homegalva.png" alt="Image 6" title="This is ISIGALVA Product.">
-        </a>
+
+    <div class="container">
+        <div class="box">
+            <a href="/page/palm1.html">
+                <img src="/img/imgpalm/3.png" alt="Image 1">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/page/palm2.html">
+              <img src="/img/imgpalm/4.png" alt="Image 2">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/page/palm3.html">
+              <img src="/img/imgpalm/5.png" alt="Image 3">
+            </a>
+        </div>
+        <div class="box">
+          <a href="/page/palm4.html">
+            <img src="/img/imgpalm/2.png" alt="Image 4">
+          </a>
+      </div>
+        <div class="box">
+            <a href="/page/palm7.html">
+              <img src="/img/imgpalm/7.png" alt="Image 7">
+            </a>
+        </div>
+        <div class="box">
+            <a href="/page/palm6.html">
+              <img src="/img/imgpalm/1.png" alt="Image 6">
+            </a>
+        </div>
+        <div class="box">
+          <a href="/page/palm7.html">
+            <img src="/img/imgpalm/6.png" alt="Image 6">
+          </a>
+      </div>
+        
     </div>
-    <!-- Change the image Here:👆 -->
 
-    <button id="openPopupBtn" onclick="openPopup()"><span style="font-family: 'Battambang', system-ui;">ទាញយកកាតាឡុកតាមរយៈអ៊ីម៉ែល</span></button>
-
-<!-- You can change the white letter:👇-->
-<div class="popup">
-  <span class="close-btn" onclick="closePopup()" style="font-weight: lighter;" title="close">&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;</span>
-  <span style="font-family: 'Battambang', system-ui;">
-    <h2 style="font-size: 24px;">តោះស្នើរយកកាតាឡុកនៅទីនេះ!</h2>
-    <h3 style="font-weight: lighter; font-size: 18px;"> សូមបំពេញព័ត៌មាននៅទីនេះ! ពួកយើងនឹងផ្ញើរកាតាឡុកទាំងអស់ទៅឲ្យអ្នក</h3>
-  </span>
-    <!-- You can change the white letter:👆-->
-
-    <!-- DO NOT CHANGE👇-->
-    <form>
-        <input type="text" id="name" name="name" placeholder="ឈ្មោះ" required>
-        <input type="text" id="phone" name="phone" placeholder="លេខទូរស័ព្ទ" required>
-        <input type="email" id="email" name="email" placeholder="អ៊ីម៉ែល" required>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        <button type="submit" class="btn" onclick="sendMail()">Submit</button>
-    </form>
-    <!-- DO NOT CHANGE👆-->
-</div>
-
-<!-- DO NOT CHANGE👇-->
-
-<script>
-  function closePopup() {
-      var popup = document.querySelector('.popup');
-      popup.style.display = 'none';
-  }
-</script>
-
-
-    <!-- Footer --><!-- DO NOT CHANGE👇-->
-    <div class="flex-container1">
+     <!-- Footer -->
+     <div class="flex-container1">
         <div class="flex-item1">
 
             <div class="image-text-container1">
@@ -206,11 +190,8 @@
             </div>
         </div>
     </div>
-
     <script src="/script/index.js"></script>
-    
-
-</body>
-
-</html>
-<!-- DO NOT CHANGE👆-->
+  
+  </body>
+  </html>
+  

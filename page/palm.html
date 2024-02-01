@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="/style/palm.css">
     <title>ISI PALM</title>
     <link rel="icon" href="/img/bluesteel.png">
+
+    <script>
+      function changeLanguage() {
+        var langSelect = document.getElementById("langSelect");
+        var selectedValue = langSelect.value;
+  
+        // Check the selected language and redirect to the corresponding page
+        if (selectedValue === "en") {
+          window.location.href = "/page/palm.html";
+        } else if (selectedValue === "kh") {
+          window.location.href = "/page/palmkh.html";
+        }
+      }
+    </script>
 </head>
 <body>
 
@@ -16,7 +30,7 @@
         </a>
     </div>
     <div class="lang">
-      <select>
+      <select id="langSelect" onchange="changeLanguage()">
           <option value="en">Eng</option>
           <option value="kh">ខ្មែរ</option>
       </select>
