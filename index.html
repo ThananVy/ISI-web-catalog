@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- DO NOT CHANGE -->
+<!-- ⬇ DO NOT EDIT! ⬇-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +16,13 @@
         })();
     </script>
 </head>
-<!-- DO NOT CHANGE  -->
+
+<!-- ⬆ DO NOT EDIT! ⬆-->
 
 <body>
 
     <header>
+        <!-- ⬇ EDIT LOGO HERE! ⬇-->
         <div class="logo">
             <a href="/index.html">
                 <img src="/img/steel_logo.png" alt="logo" width="50px">
@@ -35,9 +36,13 @@
         </div>
     </header>
 
-<!-- Edit Here: -->
-
+    <!-- ⬇ EDIT HEADER HERE! ⬇-->
+    
     <h2>ISI STEEL PRODUCT CATEGORIES</h2>
+
+    <!-- ⬆ EDIT HEADER HERE! ⬆-->
+    <!-- ⬇ EDIT DESCRIBE TEXT HERE! ⬇-->
+
     <p>
         ISI STEEL is the market leader in Cambodia’s steel sector. With our core values – Innovation, Striving,
         Integrity, and Growing together (ISIG), we have gained support from our clients across the country. ISI STEEL
@@ -47,8 +52,11 @@
 
     </p>
 
+    <!-- ⬆ EDIT HEADER HERE! ⬆-->   
+    <!-- ⬇ EDIT IMAGE HERE! ⬇-->
+
     <div class="image-container">
-        <a href="/page/palm.html">
+        <a href="/page/palm.html" target="_blank">
             <img src="/img/homepalm.png" alt="Image 1" title="This is ISIPALM Product.">
         </a>
         <a href="/page/pipe.html">
@@ -67,10 +75,11 @@
             <img src="/img/homegalva.png" alt="Image 6" title="This is ISIGALVA Product.">
         </a>
     </div>
-    <!-- Add a button to trigger the popup -->
+
+    <!-- ⬆ EDIT IMAGE HERE! ⬆-->
+
     <button id="openPopupBtn" onclick="openPopup()">Receive Catalog by Email</button>
 
-    <!-- Popup content -->
 <div class="popup">
   <span class="close-btn" onclick="closePopup()" style="font-weight: lighter;" title="close">&nbsp;&nbsp;&nbsp;x&nbsp;&nbsp;&nbsp;</span>
   <h2>Receive All Catalogs in One Go</h2>
@@ -79,7 +88,7 @@
         <input type="text" id="name" name="name" placeholder="Name" required>
         <input type="text" id="phone" name="phone" placeholder="Phone" required>
         <input type="email" id="email" name="email" placeholder="Email" required>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="4"></textarea>
         <button type="submit" class="btn" onclick="sendMail()">Submit</button>
     </form>
 </div>
@@ -167,7 +176,7 @@
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="/script/index.js"></script>
     
 
 </body>

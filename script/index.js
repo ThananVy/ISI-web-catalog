@@ -26,10 +26,6 @@ function closePopup() {
   overlay.style.display = 'none';
 }
 
-// embed code here:
-
-
-
 function submitForm() {
   var parms = {
     name: document.getElementById('name').value,
