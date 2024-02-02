@@ -5,8 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISI C&Z</title>
     <link rel="icon" href="/img/bluesteel.png">
+    <style>
+      body {
+          margin: 0; /* Remove default margin to cover the entire viewport */
+          overflow: hidden; /* Hide body overflow to prevent scrollbars */
+      }
+
+      a {
+          position: fixed; /* Set the position to fixed */
+          top: 10px; /* Adjust top distance */
+          right: 20px; /* Adjust right distance */
+          z-index: 999; /* Set z-index to bring it to the front */
+          width: 15px;
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          border: none;
+      }
+  </style>
 </head>
 <body>
+  <a href="/index.html">
+      <img src="/img/back.png" alt="return">
+  </a>
 <iframe style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/hbyjn/ugfa/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
   </div>
   </body>
